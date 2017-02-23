@@ -80,12 +80,20 @@ public class tarea1 extends javax.swing.JFrame {
         jTextField11 = new javax.swing.JTextField();
         jButton16 = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
+        jFrame6 = new javax.swing.JFrame();
+        jLabel20 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jTextField12 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
 
         jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         jFrame1.setPreferredSize(new java.awt.Dimension(400, 400));
@@ -487,6 +495,124 @@ public class tarea1 extends javax.swing.JFrame {
                 .addContainerGap(135, Short.MAX_VALUE))
         );
 
+        jFrame6.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        jFrame6.setPreferredSize(new java.awt.Dimension(400, 400));
+        jFrame6.setSize(new java.awt.Dimension(400, 400));
+
+        jLabel20.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel20.setText("Matriz");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "", "", "", "", "", "", "", "", "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable1.setEnabled(false);
+        jTable1.setRowSelectionAllowed(false);
+        jTable1.getTableHeader().setResizingAllowed(false);
+        jTable1.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
+            jTable1.getColumnModel().getColumn(0).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(2).setResizable(false);
+            jTable1.getColumnModel().getColumn(2).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(3).setResizable(false);
+            jTable1.getColumnModel().getColumn(3).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(4).setResizable(false);
+            jTable1.getColumnModel().getColumn(4).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(5).setResizable(false);
+            jTable1.getColumnModel().getColumn(5).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(6).setResizable(false);
+            jTable1.getColumnModel().getColumn(6).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(7).setResizable(false);
+            jTable1.getColumnModel().getColumn(7).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(8).setResizable(false);
+            jTable1.getColumnModel().getColumn(8).setPreferredWidth(25);
+            jTable1.getColumnModel().getColumn(9).setResizable(false);
+            jTable1.getColumnModel().getColumn(9).setPreferredWidth(25);
+        }
+
+        jButton18.setText("Generar");
+        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton18MouseClicked(evt);
+            }
+        });
+
+        jButton19.setText("Regresar");
+        jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton19MouseClicked(evt);
+            }
+        });
+
+        jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField12.setText(".");
+        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField12ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jFrame6Layout = new javax.swing.GroupLayout(jFrame6.getContentPane());
+        jFrame6.getContentPane().setLayout(jFrame6Layout);
+        jFrame6Layout.setHorizontalGroup(
+            jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame6Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addGap(163, 163, 163))
+            .addGroup(jFrame6Layout.createSequentialGroup()
+                .addGap(78, 78, 78)
+                .addGroup(jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                    .addGroup(jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jTextField12, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jFrame6Layout.createSequentialGroup()
+                            .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                            .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(74, Short.MAX_VALUE))
+        );
+        jFrame6Layout.setVerticalGroup(
+            jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton18)
+                    .addComponent(jButton19))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(400, 400));
         setResizable(false);
@@ -535,6 +661,13 @@ public class tarea1 extends javax.swing.JFrame {
             }
         });
 
+        jButton17.setText("Matriz");
+        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton17MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -547,13 +680,14 @@ public class tarea1 extends javax.swing.JFrame {
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(65, 65, 65))
         );
         layout.setVerticalGroup(
@@ -570,7 +704,9 @@ public class tarea1 extends javax.swing.JFrame {
                     .addComponent(jButton7)
                     .addComponent(jButton10))
                 .addGap(30, 30, 30)
-                .addComponent(jButton13)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton13)
+                    .addComponent(jButton17))
                 .addContainerGap(197, Short.MAX_VALUE))
         );
 
@@ -744,6 +880,87 @@ public class tarea1 extends javax.swing.JFrame {
         jTextField11.setText(Integer.toString(this.intentos));
     }//GEN-LAST:event_jButton15MouseClicked
 
+    private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
+        Random azar = new Random();
+
+        String[] letras = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                jTable1.setValueAt(letras[azar.nextInt(25)],i,j);
+            }
+        }
+
+        int maxX = 9;
+        int maxY = 9;
+        int minX = 1;
+        int minY = 0;
+        int dir  = 0;
+        int tot  = 0; // Total de celdas revisadas
+        int X    = 0;
+        int Y    = 0;
+
+        String resultado = "";
+
+        while (tot < 100) {
+            resultado+= jTable1.getValueAt(X,Y);
+            tot++;
+            if (dir == 0) {           // 0 horizontal derecha
+                if(Y < maxY){
+                    Y++;
+                }else{
+                    dir++;
+                    resultado+= " ";
+                    maxY--;
+                    X++;
+                }
+            } else if ( dir == 1) { // 1 vertical   abajo
+                if(X < maxX){
+                    X++;
+                }else{
+                    dir++;
+                    resultado+= " ";
+                    maxX--;
+                    Y--;
+                }
+            } else if ( dir == 2) { // 2 horizontal izquierda
+                if(Y > minY){
+                    Y--;
+                }else{
+                    dir++;
+                    resultado+= " ";
+                    minY++;
+                    X--;
+                }
+            } else if ( dir == 3) { // 3 vertical   arriba
+                if(X > minX){
+                    X--;
+                }else{
+                    dir = 0;
+                    resultado+= " ";
+                    minX++;
+                    Y++;
+                }
+            }
+        }
+
+        jTextField12.setText(resultado);
+    }//GEN-LAST:event_jButton18MouseClicked
+
+    private void jButton17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseClicked
+        this.setVisible(false);
+        jFrame6.setVisible(true);
+    }//GEN-LAST:event_jButton17MouseClicked
+
+    private void jButton19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MouseClicked
+        jFrame6.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton19MouseClicked
+
+    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField12ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -788,6 +1005,9 @@ public class tarea1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -801,6 +1021,7 @@ public class tarea1 extends javax.swing.JFrame {
     private javax.swing.JFrame jFrame3;
     private javax.swing.JFrame jFrame4;
     private javax.swing.JFrame jFrame5;
+    private javax.swing.JFrame jFrame6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -813,6 +1034,7 @@ public class tarea1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -820,9 +1042,12 @@ public class tarea1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
