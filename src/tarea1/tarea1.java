@@ -222,10 +222,9 @@ public class tarea1 extends javax.swing.JFrame {
                         .addGap(44, 44, 44)
                         .addGroup(jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addGroup(jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField5)
-                                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                                .addComponent(jTextField4)))))
+                            .addComponent(jTextField5)
+                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                            .addComponent(jTextField4))))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
         jFrame2Layout.setVerticalGroup(
@@ -256,7 +255,6 @@ public class tarea1 extends javax.swing.JFrame {
         jLabel9.setText("Primos");
 
         jButton8.setText("Operar");
-        jButton8.setActionCommand("Operar");
         jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton8MouseClicked(evt);
@@ -266,7 +264,6 @@ public class tarea1 extends javax.swing.JFrame {
         jLabel10.setText("Ingrese número");
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText(".");
 
         jButton9.setText("Regresar");
         jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -290,9 +287,8 @@ public class tarea1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                         .addGroup(jFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addGroup(jFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                                .addComponent(jTextField6)))))
+                            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                            .addComponent(jTextField6))))
                 .addGap(76, 76, 76))
             .addGroup(jFrame3Layout.createSequentialGroup()
                 .addGap(76, 76, 76)
@@ -315,11 +311,10 @@ public class tarea1 extends javax.swing.JFrame {
                 .addComponent(jLabel11)
                 .addGap(18, 18, 18)
                 .addComponent(jButton9)
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addContainerGap(184, Short.MAX_VALUE))
         );
 
         jFrame4.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        jFrame4.setPreferredSize(new java.awt.Dimension(400, 400));
         jFrame4.setSize(new java.awt.Dimension(400, 400));
 
         jLabel12.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -335,7 +330,7 @@ public class tarea1 extends javax.swing.JFrame {
         jLabel13.setText("Ingrese número");
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText(".");
+        jLabel14.setText(" ");
 
         jButton12.setText("Regresar");
         jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -385,7 +380,6 @@ public class tarea1 extends javax.swing.JFrame {
         );
 
         jFrame5.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        jFrame5.setPreferredSize(new java.awt.Dimension(400, 400));
         jFrame5.setSize(new java.awt.Dimension(400, 400));
 
         jLabel15.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -496,7 +490,6 @@ public class tarea1 extends javax.swing.JFrame {
         );
 
         jFrame6.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        jFrame6.setPreferredSize(new java.awt.Dimension(400, 400));
         jFrame6.setSize(new java.awt.Dimension(400, 400));
 
         jLabel20.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -571,11 +564,6 @@ public class tarea1 extends javax.swing.JFrame {
 
         jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField12.setText(".");
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jFrame6Layout = new javax.swing.GroupLayout(jFrame6.getContentPane());
         jFrame6.getContentPane().setLayout(jFrame6Layout);
@@ -614,7 +602,6 @@ public class tarea1 extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 400));
         setResizable(false);
         setSize(new java.awt.Dimension(400, 400));
 
@@ -625,11 +612,6 @@ public class tarea1 extends javax.swing.JFrame {
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
             }
         });
 
@@ -713,10 +695,10 @@ public class tarea1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    /**
+     * Operar series
+     * @param evt
+     */
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         //JOptionPane.showMessageDialog(rootPane, jTextField1.getText());
         double valor     = Double.parseDouble(jTextField1.getText());
@@ -735,16 +717,28 @@ public class tarea1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton2MouseClicked
 
+    /**
+     * Seccion a) Series
+     * @param evt
+     */
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         this.setVisible(false);
         jFrame1.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
+    /**
+     * Regresar de a) a principal
+     * @param evt
+     */
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         jFrame1.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_jButton3MouseClicked
 
+    /**
+     * Operar factorial
+     * @param evt
+     */
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         double valor     = Double.parseDouble(jTextField4.getText());
         double resultado = 1;
@@ -755,16 +749,28 @@ public class tarea1 extends javax.swing.JFrame {
         jTextField5.setText(String.format("%f",resultado));
     }//GEN-LAST:event_jButton5MouseClicked
 
+    /**
+     * Seccion b) Factorial
+     * @param evt
+     */
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         this.setVisible(false);
         jFrame2.setVisible(true);
     }//GEN-LAST:event_jButton4MouseClicked
 
+    /**
+     * Regresar de b) a principal
+     * @param evt
+     */
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
         jFrame2.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_jButton6MouseClicked
 
+    /**
+     * Operar primos
+     * @param evt
+     */
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
         int valor     = Integer.parseInt(jTextField6.getText());
         int resultado = 0;
@@ -782,26 +788,46 @@ public class tarea1 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton8MouseClicked
 
+    /**
+     * Seccion c) Primos
+     * @param evt
+     */
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
         jFrame3.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton7MouseClicked
 
+    /**
+     * Regresar de c) a principal
+     * @param evt
+     */
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
         this.setVisible(true);
         jFrame3.setVisible(false);
     }//GEN-LAST:event_jButton9MouseClicked
 
+    /**
+     * Secccion d) Números perfectos
+     * @param evt
+     */
     private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
         this.setVisible(false);
         jFrame4.setVisible(true);
     }//GEN-LAST:event_jButton10MouseClicked
 
+    /**
+     * Regresar de d) a principal
+     * @param evt
+     */
     private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
         jFrame4.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_jButton12MouseClicked
 
+    /**
+     * Operar números perfectos
+     * @param evt
+     */
     private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
         double valor     = Double.parseDouble(jTextField7.getText());
         double resultado = 0;
@@ -819,11 +845,19 @@ public class tarea1 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton11MouseClicked
 
+    /**
+     * Seccion e) Adivinar
+     * @param evt
+     */
     private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
         this.setVisible(false);
         jFrame5.setVisible(true);
     }//GEN-LAST:event_jButton13MouseClicked
 
+    /**
+     * Regresar de e) a principal
+     * @param evt
+     */
     private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
 
         jLabel19.setText(Integer.toString(this.adivinar));
@@ -836,16 +870,20 @@ public class tarea1 extends javax.swing.JFrame {
         jTextField10.setEditable(false);
         jButton15.setEnabled(false);
 
-        jTextField10.setText("");
-        jLabel19.setText("");
+        jTextField10.setText(" ");
+        jLabel19.setText(" ");
 
-        jTextField11.setText("");
-        jLabel17.setText(".");
+        jTextField11.setText(" ");
+        jLabel17.setText(" ");
 
         jFrame5.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_jButton16MouseClicked
 
+    /**
+     * Botón que inicia el juego
+     * @param evt
+     */
     private void jButton14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseClicked
         Random azar   = new Random();
         int valor1    = Integer.parseInt(jTextField8.getText());
@@ -863,6 +901,10 @@ public class tarea1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton14MouseClicked
 
+    /**
+     * Botón en el juego para verificar el número a adivinar
+     * @param evt
+     */
     private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
         int valor = Integer.parseInt(jTextField10.getText());
         if (valor == this.adivinar) {
@@ -880,6 +922,10 @@ public class tarea1 extends javax.swing.JFrame {
         jTextField11.setText(Integer.toString(this.intentos));
     }//GEN-LAST:event_jButton15MouseClicked
 
+    /**
+     * Generar datos en tabla y mostrar el resultado en el campo de texto
+     * @param evt
+     */
     private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
         Random azar = new Random();
 
@@ -900,7 +946,7 @@ public class tarea1 extends javax.swing.JFrame {
         int X    = 0;
         int Y    = 0;
 
-        String resultado = "";
+        String resultado = " ";
 
         while (tot < 100) {
             resultado+= jTable1.getValueAt(X,Y);
@@ -910,7 +956,6 @@ public class tarea1 extends javax.swing.JFrame {
                     Y++;
                 }else{
                     dir++;
-                    resultado+= " ";
                     maxY--;
                     X++;
                 }
@@ -919,7 +964,6 @@ public class tarea1 extends javax.swing.JFrame {
                     X++;
                 }else{
                     dir++;
-                    resultado+= " ";
                     maxX--;
                     Y--;
                 }
@@ -928,7 +972,6 @@ public class tarea1 extends javax.swing.JFrame {
                     Y--;
                 }else{
                     dir++;
-                    resultado+= " ";
                     minY++;
                     X--;
                 }
@@ -937,7 +980,6 @@ public class tarea1 extends javax.swing.JFrame {
                     X--;
                 }else{
                     dir = 0;
-                    resultado+= " ";
                     minX++;
                     Y++;
                 }
@@ -947,19 +989,23 @@ public class tarea1 extends javax.swing.JFrame {
         jTextField12.setText(resultado);
     }//GEN-LAST:event_jButton18MouseClicked
 
+    /**
+     * Seccion f) Matriz
+     * @param evt
+     */
     private void jButton17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseClicked
         this.setVisible(false);
         jFrame6.setVisible(true);
     }//GEN-LAST:event_jButton17MouseClicked
 
+    /**
+     * Regresar de f) a principal
+     * @param evt
+     */
     private void jButton19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MouseClicked
         jFrame6.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_jButton19MouseClicked
-
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
 
     /**
      * @param args the command line arguments
